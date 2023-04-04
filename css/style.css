@@ -1,0 +1,313 @@
+#ban-user-container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 30px;
+    background-color: #fff;
+    margin-right: 20px;
+    position: relative;
+}
+
+#ban-user-container h3 {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.ver {
+    float:right;
+    color: #bbb;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0 10px 10px 0;
+    font-size: .9em;
+    line-height: 1;
+}
+
+#w3dev-tabs {
+    border-bottom: 1px solid #cccccc;
+    height: 39px;
+}
+
+span.w3dev-banned-status { 
+    /*
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    background-image: url('images/sprite.png');
+    background-position:14px center;
+    zoom: 1;
+    filter: alpha(opacity=70);
+    opacity: 0.7;
+    */
+    color:#cccccc;
+}
+span.w3dev-banned-status.active {
+    color:#d55555;
+}
+span.w3dev-banned-user-icon { 
+    background-position:0 center;
+}
+
+tr.w3dev-banned-user-row {
+    background-color: #f2dede!important;
+}
+
+#w3dev-tabs li a {
+    padding: 10px 20px;
+    display: inline-block;
+    border: 1px solid #cccccc;
+    border-right: 0;
+    position: relative;
+    margin: 0;
+    margin-bottom: -1px;
+    text-decoration: none;
+}
+
+#w3dev-tabs li a:active,
+#w3dev-tabs li a:hover,
+#w3dev-tabs li a:visited,
+#w3dev-tabs li a:focus {
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+#w3dev-tabs li a.active {
+    background-color: #337ab7;
+    border-color: #337ab7;
+    color: #fff;
+    outline: 0;
+}
+
+#w3dev-tabs li:last-child a {
+   border-right: 1px solid #cccccc;
+}
+
+#w3dev-tabs,
+#w3dev-tabs li { 
+    margin: 0; padding: 0;
+    list-style: none;
+}
+
+#w3dev-tabs li { 
+    float: left;
+}
+
+.w3dev-tab { padding-top: 10px; }
+
+#w3dev-tabs .w3dev-tab.active { display:block; }
+
+#w3dev-tabs .w3dev-tab.hidden { display:none; }
+
+div.row-actions.sticky-actions { left: 0; }
+
+.icon-ban-user { position:relative;top:-3px;font-size:9px;color:#ccc; }
+.icon-ban-user.active,
+.icon-ban-user:focus,
+.icon-ban-user:hover { position:relative;top:-3px;font-size:9px;color:#d55555; }
+.icon-warn-user { position:relative;top:-3px;font-size:9px;color:#ccc; }
+.icon-warn-user.active,
+.icon-warn-user:focus,
+.icon-warn-user:hover { position:relative;top:-3px;font-size:9px;color:#ecab5e; }
+.icon-ban-date-user { position:relative;top:-3px;font-size:9px;color:#ccc; }
+.icon-ban-date-user.active,
+.icon-ban-date-user:focus,
+.icon-ban-date-user:hover { position:relative;top:-3px;font-size:9px;color:#5bc0de; }
+
+.cgc_ub_edit_badges.hide,
+.icon-ban-user.hide,
+.icon-warn-user.hide,
+.icon-ban-date.hide,
+.icon-ban-date-user.hide { display: none!important; }
+
+
+.js-unban-user { font-size:9px;color:#d55555; }
+.js-unban-user.success, .js-unban-user:hover { font-size:9px;color:#5cb85c; }
+
+/* jquery confirm modals styling
+   --- */
+div#dtp-container.flatpickr-input { position: relative; }
+div.flatpickr-calendar.inline {
+    position: absolute;
+    top: -3px;
+    z-index: 99
+}
+body div.flatpickr-calendar.open {
+    z-index: 99999999!important;
+}
+
+body #w3dev-dtp-wrapper {
+/* body #input-w3dev-unban-date { */
+    position: absolute;
+    bottom: -49px;
+    background-color: #fff;
+    border: 2px solid #ecf0f2;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 4px;
+    outline: 0;
+    height: 28px;
+    width: 200px;
+}
+body #w3dev-dtp-wrapper input,
+body #w3dev-dtp-wrapper i {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+body #w3dev-dtp-wrapper i { 
+    left: 10px;
+    top: 7px;
+    z-index: 2000;
+}
+body #w3dev-dtp-wrapper input {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 0 6px 32px;
+    z-index: 1000;
+    background-color: transparent;
+}
+
+/* jquery confirm modals styling
+   --- */
+#jconfirm-warn-user textarea,
+#jconfirm-ban-user textarea { 
+    padding: 8px 10px;
+    border: 2px solid #efefef !important;
+    height: 80px;
+    margin-bottom: 20px;
+    width: 100%;
+    overflow: auto;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+
+}
+
+body .btn.hide {
+    display:none!important;
+}
+body .jconfirm.jconfirm-light .jconfirm-box .jconfirm-buttons {
+    display: block;
+    float: none;
+    text-align: right;
+}
+body .jconfirm .jconfirm-box,
+body .jconfirm .jconfirm-box div.jconfirm-content-pane {
+    overflow: visible;
+}
+
+body .selectric {
+    border: 2px solid #efefef;
+    margin-bottom: -2px;
+    background: #F8F8F8;
+    position: relative;
+}
+
+body .selectric .button {
+    border:0!important;
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+}
+
+/* users-page.php extract 
+   ---------------------- */
+   
+/* Settings */
+.w3dev-settings-section { border:1px solid #ddd; padding: 20px; padding-top: 0; margin-bottom: 20px; padding-bottom: 30px; }
+.w3dev-settings-section h3 { 
+    margin-left: -20px;margin-right: -20px;padding: 20px!important;border-bottom: 1px solid #ddd;
+    background-color: #f9f9f9; margin-bottom: 20px;
+}
+.w3dev-settings-section.closed { padding-bottom: 32px; }
+.w3dev-settings-section.closed h3 { margin-bottom: 0; }
+.w3dev-settings-section h3 i.w3dev-icon {
+    color: #8a6d3b;
+    float: left;
+    position: relative;
+    top: -9px;
+    margin-right: 10px;
+    width: 40px;
+    text-align: center
+}
+
+.mb-10 { margin-bottom: 10px; }
+.mb-20 { margin-bottom: 20px; }
+
+
+.w3dev-quick-links a {
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    text-align: center;
+    width: 74px;
+    text-decoration: none;
+}
+
+.w3dev-quick-links a span { display: block; text-decoration: none; padding-top: 5px; font-size: 11px; }
+.w3dev-quick-links a:hover { color:#8a6d3b; background-color: #f9f9f9; }
+
+.w3dev-settings-section:hover {
+  box-shadow: 0 0 6px rgba(0,0,0,0.15);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.w3dev-settings-section { position: relative; }
+.w3dev-back-to-top { position: absolute; right: 10px; bottom: 8px; text-decoration: none; color: #ccc; }
+.w3dev-back-to-top:hover { color: #347ab7; }
+
+.w3dev-settings-section.closed { padding-bottom: 0px; }
+.w3dev-settings-section.closed a.w3dev-back-to-top { display: none; }
+.w3dev-settings-section.closed h3 { margin-bottom: -1px; }
+
+body a.w3dev-toggle-content {
+    position: absolute;
+    float: none !important;
+    right: 0;
+    top: 0;
+    width: 50px;
+    text-align: center;
+    border-left: 1px solid #ddd;
+    height: 58px;
+    line-height: 58px;
+}
+body a.w3dev-toggle-content i { font-size: 20px; }
+
+.w3dev-advisory { background-color: #fcf8e3; padding: 15px; border-left: 4px solid #8a6d3b; margin-bottom: 25px; }
+
+/* FAQ */
+li.answer { padding-bottom: 10px; }
+li.question { text-decoration: underline; }
+li.question span { font-weight: bold; color: #f0ad4e; }
+li.answer span { font-weight: bold; color: #5cb85c; }
+
+/* admin users page 
+   ---------------- */
+
+a.cgc_ub_edit_badges:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+}
+
+.users-info-btn { color:#333;margin-right: 8px;font-size:15px; cursor: pointer;}
+.users-shared-btn { color:#333;margin-right: 8px;font-size:15px;  cursor: pointer;}
+
+/* go pro tab on users page 
+   --- */
+li.go-pro span { color:red; font-weight:600; }
+li.go-pro a.active { background-color: red!important; border-color: red!important; }
+li.go-pro a.active span { color: #fff!important; }

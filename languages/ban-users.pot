@@ -1,0 +1,872 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: w3dev Ban Users\n"
+"POT-Creation-Date: 2017-05-04 18:44+0100\n"
+"PO-Revision-Date: 2017-05-03 10:05+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: w3dev-ban-users.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: include/functions.php:34
+msgid "<strong>ERROR</strong>: "
+msgstr ""
+
+#: include/users-page.php:38
+msgid ""
+"The Ultimate WP Plugin for managing your users and blocking unwanted "
+"registrations."
+msgstr ""
+
+#: include/users-page.php:42
+msgid "Options"
+msgstr ""
+
+#: include/users-page.php:43
+msgid "Email Templates"
+msgstr ""
+
+#: include/users-page.php:45
+msgid "Registration Bans"
+msgstr ""
+
+#: include/users-page.php:47 include/users-page.php:467
+msgid "FAQs"
+msgstr ""
+
+#: include/users-page.php:49
+msgid "Go Pro!"
+msgstr ""
+
+#: include/users-page.php:57
+msgid "Accessibility Options"
+msgstr ""
+
+#: include/users-page.php:61
+msgid ""
+"Optimise plugin for accessibility / screen readers (i.e. displays text links "
+"instead of icons)"
+msgstr ""
+
+#: include/users-page.php:68
+msgid "General Options"
+msgstr ""
+
+#: include/users-page.php:72
+msgid ""
+"Set custom redirection url after logout (i.e. to a notification page, or "
+"back to the site's login url). Especially important if your WordPress setup "
+"doesn't use wp-login.php"
+msgstr ""
+
+#: include/users-page.php:75
+msgid "(i.e. http://mywebsite.com or relative so /about-us)"
+msgstr ""
+
+#: include/users-page.php:79
+msgid "Set Date Format:"
+msgstr ""
+
+#: include/users-page.php:90
+msgid "Ban &amp; Unban Options"
+msgstr ""
+
+#: include/users-page.php:94
+msgid ""
+"Change the user's posts status when banned (i.e. select draft to hide posts "
+"from showing on blog)"
+msgstr ""
+
+#: include/users-page.php:109
+msgid "If already logged in when banned, force logout."
+msgstr ""
+
+#: include/users-page.php:112
+msgid "If already logged in when banned, display message to user."
+msgstr ""
+
+#: include/users-page.php:118
+msgid "Display message in back end of website"
+msgstr ""
+
+#: include/users-page.php:121
+msgid "Display message on front end of website in a dialog box"
+msgstr ""
+
+#: include/users-page.php:124
+msgid ""
+"Force logout and redirect (after diplaying message in dialog box; when "
+"applicable)"
+msgstr ""
+
+#: include/users-page.php:127
+msgid "Only show diaglog box once (uses cookie - set to 30days)"
+msgstr ""
+
+#: include/users-page.php:132
+msgid "Enable email notifications when banning or unbanning users"
+msgstr ""
+
+#: include/users-page.php:135
+msgid ""
+"Include option for custom message in email, and option to set ban duration "
+"when banning a user (i.e. date picker, day, week, month etc..)"
+msgstr ""
+
+#: include/users-page.php:142
+msgid "Default Messages"
+msgstr ""
+
+#: include/users-page.php:146
+msgid "Default reason for banning a user:"
+msgstr ""
+
+#: include/users-page.php:147
+msgid "Generic reason for ban"
+msgstr ""
+
+#: include/users-page.php:150
+msgid "Message to display when a banned user attempts to login:"
+msgstr ""
+
+#: include/users-page.php:151 include/users-page.php:157
+#: include/users-page.php:163 include/users-page.php:169
+msgid "Note:"
+msgstr ""
+
+#: include/users-page.php:151 include/users-page.php:157
+#, php-format
+msgid "following tags can be used if required: %%reason%% and %%unban_date%%"
+msgstr ""
+
+#: include/users-page.php:152 include/users-page.php:158
+#, php-format
+msgid ""
+"Your account has been suspended. Reason: %%reason%% This ban will be lifted: "
+"%%unban_date%%"
+msgstr ""
+
+#: include/users-page.php:156
+msgid ""
+"Message to display when user has been banned, whilst logged in, and attempts "
+"to access restricted content:"
+msgstr ""
+
+#: include/users-page.php:162
+msgid "Default 'reason' for banning a user:"
+msgstr ""
+
+#: include/users-page.php:162 include/users-page.php:168
+msgid "NEW"
+msgstr ""
+
+#: include/users-page.php:163
+msgid ""
+"this default value will be inserted into the ban user modal/popup when "
+"sending a custom message"
+msgstr ""
+
+#: include/users-page.php:164
+msgid "i.e. Because you have broken our terms and conditions."
+msgstr ""
+
+#: include/users-page.php:168
+msgid "Default 'reason' for warning a user:"
+msgstr ""
+
+#: include/users-page.php:169
+msgid ""
+"this default value will be inserted into the warn user modal/popup when "
+"sending a custom message"
+msgstr ""
+
+#: include/users-page.php:170
+msgid ""
+"i.e. Failure to adhere to our terms and conditions will result in your "
+"immediate suspension. This is your first and final warning."
+msgstr ""
+
+#: include/users-page.php:178
+msgid "IP/Geodata Options"
+msgstr ""
+
+#: include/users-page.php:178 include/users-page.php:193
+msgid "(Premium Feature)"
+msgstr ""
+
+#: include/users-page.php:182
+msgid "Capture IP/Geodata during user login"
+msgstr ""
+
+#: include/users-page.php:185
+msgid "Display IP/Geodata column in users table"
+msgstr ""
+
+#: include/users-page.php:193
+msgid "Notification Options"
+msgstr ""
+
+#: include/users-page.php:197
+msgid "Send admin(s) an email notification when user publishes first post."
+msgstr ""
+
+#: include/users-page.php:200
+msgid ""
+"Email addresss(es) to receive notification when user publishes first post:"
+msgstr ""
+
+#: include/users-page.php:201
+msgid "Comma seperated list of email addresses"
+msgstr ""
+
+#: include/users-page.php:208
+msgid "Users Table Options"
+msgstr ""
+
+#: include/users-page.php:212
+msgid "Display banned column in users table showing login status"
+msgstr ""
+
+#: include/users-page.php:215
+msgid "Highlight banned users in users table using red background colour"
+msgstr ""
+
+#: include/users-page.php:222
+msgid "Warn Options"
+msgstr ""
+
+#: include/users-page.php:226
+msgid "Enable warn user feature"
+msgstr ""
+
+#: include/users-page.php:229
+msgid "Include option for custom message in email when warning a user"
+msgstr ""
+
+#: include/users-page.php:236
+msgid "Security Settings"
+msgstr ""
+
+#: include/users-page.php:240
+msgid "Default"
+msgstr ""
+
+#: include/users-page.php:244
+msgid "Restrict Ban User privilage rights to staff in a higher WordPress role"
+msgstr ""
+
+#: include/users-page.php:247
+msgid ""
+"Restrict Ban User privilage rights to staff in the same or a higher "
+"WordPress role"
+msgstr ""
+
+#: include/users-page.php:251
+msgid ""
+"Restrict Ban User administrative rights to users in the following WordPress "
+"role"
+msgstr ""
+
+#: include/users-page.php:273
+msgid "3rd Party Plugin Support"
+msgstr ""
+
+#: include/users-page.php:276
+msgid ""
+"There are a number of awesome plugins available which extend the membership "
+"capabilities of WordPress. If you use any of the following plugins please "
+"tick the checkboxes below to enable support for them."
+msgstr ""
+
+#: include/users-page.php:279
+msgid "Ultimate Member Plugin"
+msgstr ""
+
+#: include/users-page.php:282
+msgid "BuddyPress Plugin (by default)"
+msgstr ""
+
+#: include/users-page.php:285
+msgid "s2member Plugin (Coming Soon)"
+msgstr ""
+
+#: include/users-page.php:292
+msgid "Plugin Shortcodes"
+msgstr ""
+
+#: include/users-page.php:292 include/users-page.php:318
+#: include/users-page.php:321 include/users-page.php:330
+msgid "UPDATED"
+msgstr ""
+
+#: include/users-page.php:296
+msgid ""
+"Check if user is banned (by user id); if banned shortcode will output message"
+msgstr ""
+
+#: include/users-page.php:300
+msgid ""
+"Check if user is banned (by email address); if banned shortcode will output "
+"message"
+msgstr ""
+
+#: include/users-page.php:304
+msgid ""
+"Check if user is banned (by username); if banned shortcode will output "
+"message"
+msgstr ""
+
+#: include/users-page.php:312
+msgid "Conflict Management"
+msgstr ""
+
+#: include/users-page.php:315
+msgid ""
+"If you want to manually load any of the libraries required by this plugin "
+"then simply check the correspnding tick box(es) below to disable them from "
+"autoloading. But remember, the plugin won't function correctly if these "
+"libraries aren't all available. So I recommend you keep all tick boxes below "
+"unchecked unless you know what you are doing."
+msgstr ""
+
+#: include/users-page.php:318
+msgid "Disable js/css autoload Font Awesome (ver 4.7.0)"
+msgstr ""
+
+#: include/users-page.php:321
+msgid "Disable js/css autoload jQuery Confirm (ver 3.2.1)"
+msgstr ""
+
+#: include/users-page.php:324
+msgid "Disable js/css autoload DataTables (ver 1.10.12)"
+msgstr ""
+
+#: include/users-page.php:327
+msgid "Disable js/css autoload Notify (ver 0.4.1)"
+msgstr ""
+
+#: include/users-page.php:330
+msgid "Disable js/css autoload Selectric (ver 1.11.1)"
+msgstr ""
+
+#: include/users-page.php:333
+msgid "Disable js/css autoload Flatpickr (ver 2.0.5)"
+msgstr ""
+
+#: include/users-page.php:345
+msgid "Save Options"
+msgstr ""
+
+#: include/users-page.php:364
+msgid "Email Options:"
+msgstr ""
+
+#: include/users-page.php:369
+#, php-format
+msgid ""
+"Default message to show if user banned indefinitely and %%unban_date%% tag "
+"included in 'BAN User email template':"
+msgstr ""
+
+#: include/users-page.php:379
+msgid "BAN User email template:"
+msgstr ""
+
+#: include/users-page.php:382
+msgid ""
+"If user email notification is enabled, then this email template will be used "
+"when notifying users that they have been banned."
+msgstr ""
+
+#: include/users-page.php:384 include/users-page.php:443
+msgid "Template TAGS:"
+msgstr ""
+
+#: include/users-page.php:386 include/users-page.php:387
+#: include/users-page.php:445
+msgid "Include tag"
+msgstr ""
+
+#: include/users-page.php:386
+msgid "to show reason for banning user."
+msgstr ""
+
+#: include/users-page.php:387
+msgid "to show date ban will be lifted (i.e. account reinstated)."
+msgstr ""
+
+#: include/users-page.php:391 include/users-page.php:414
+#: include/users-page.php:439
+msgid "Subject Title:"
+msgstr ""
+
+#: include/users-page.php:409
+msgid "UnBAN User email template:"
+msgstr ""
+
+#: include/users-page.php:412
+msgid ""
+"If user email notification is enabled, then this email template will be used "
+"when notifying users that they have been unbanned."
+msgstr ""
+
+#: include/users-page.php:434
+msgid "Warn User email template:"
+msgstr ""
+
+#: include/users-page.php:437
+msgid ""
+"This template will be used when sending a warning to users for a possible "
+"future ban."
+msgstr ""
+
+#: include/users-page.php:445
+msgid "to show reason for warning user."
+msgstr ""
+
+#: include/users-page.php:462
+msgid "Save Template"
+msgstr ""
+
+#: include/users-page.php:470
+msgid "What does this plugin do?"
+msgstr ""
+
+#: include/users-page.php:471
+msgid ""
+"The BAN User plugin enables WordPress administrators to disable (aka BAN, "
+"suspend..) specific user accounts. Banning a user prevents them from being "
+"able to login to their WordPress account until an administrator reinstates "
+"their access. You can prevent a user from logging in indefinately, or until "
+"a specified date. There are a number of configurable options, including "
+"sending the user an email notification to inform them they have been banned "
+"from the website. There is also an email template for notifying a user when "
+"their login access has been reinstated (aka unbanned)."
+msgstr ""
+
+#: include/users-page.php:472
+msgid ""
+"I simply want the ability to BAN users and prevent them from logging in. "
+"What basic options do I need to set?"
+msgstr ""
+
+#: include/users-page.php:473
+msgid ""
+"The plugin by default allows you to BAN and UnBAN user accounts, and to "
+"force users to logout when banned. It also comes pre-configured with the "
+"email notification templates. Other options are available from the Plugin's "
+"option settings."
+msgstr ""
+
+#: include/users-page.php:474
+msgid ""
+"When banning or unbanning users I want to send them a custom email "
+"notification."
+msgstr ""
+
+#: include/users-page.php:475
+#, php-format
+msgid ""
+"This feature is enabled by default. To customise the emails simply click on "
+"the 'Email Templates' tab and then edit the subject titles and email body. "
+"There are currently two email templates. The 'BAN user notification "
+"template', and the 'UnBAN user notification template'. Both of which have a "
+"configurable subject title. If you have enabled the 'Require unique reason "
+"for ban' option then you will need to include the tag '%%reason%%' within "
+"the body of the 'BAN user notification template'. This tag will then be "
+"replaced with the text you enter when banning a user."
+msgstr ""
+
+#: include/users-page.php:476
+msgid ""
+"I want to clearly highlight users who have been banned in the users table. "
+msgstr ""
+
+#: include/users-page.php:477
+msgid ""
+"By default banned users are highlighted in the users table by a red circle "
+"in the BANned column. Users who have been banned are also highlighted by a "
+"red row. You can disable these display options by editing the plugin options "
+"(click the Options tab)."
+msgstr ""
+
+#: include/users-page.php:478
+msgid ""
+"When banning a user, I want to include the reason why they have been banned "
+"in their email notification."
+msgstr ""
+
+#: include/users-page.php:479
+#, php-format
+msgid ""
+"To include the reason for banning the user in the notification email, ensure "
+"the option 'Require unique reason for ban' has been checked. Also make sure "
+"you have included the tag '%%reason%%' within the body of the 'BAN user "
+"notification template'. This tag will then be replaced with the text you "
+"enter when banning a user."
+msgstr ""
+
+#: include/users-page.php:480
+msgid ""
+"When a user has been banned from the site whilst still logged in, I want "
+"them to see a message."
+msgstr ""
+
+#: include/users-page.php:481
+msgid ""
+"To display a message to logged in users when banned, first uncheck the "
+"plugin option 'If already logged in when banned, force logout'. This will "
+"then reveal another option called 'If already logged in when banned, display "
+"message to user'. Make sure this option is checked. A text input will then "
+"appear allowing you to set a short message (e.g. You have been banned from "
+"the website)."
+msgstr ""
+
+#: include/users-page.php:482
+msgid ""
+"When a user has been banned from the site whilst still logged in, I want to "
+"redirect them to the default WP login page"
+msgstr ""
+
+#: include/users-page.php:483
+msgid ""
+"To automatically log a banned user out and redirect them to the default "
+"login page you will need to ensure the plugin's option 'If already logged in "
+"when banned, display message to user' has been unchecked. You will then see "
+"another option called 'If already logged in when banned, force logout'. "
+"Simply check this to enable this feature."
+msgstr ""
+
+#: include/users-page.php:484
+msgid ""
+"When a user has been banned from the site whilst still logged in, I want to "
+"redirect them to a custom url."
+msgstr ""
+
+#: include/users-page.php:485
+msgid ""
+"To automatically log a banned user out and redirect them to a custom url you "
+"will need to ensure the plugin's option 'If already logged in when banned, "
+"display message to user' has been unchecked. You will then see another "
+"option called 'If already logged in when banned, force logout'. Simply check "
+"this to enable this feature. To then set a custom url instead of redirecting "
+"banned users to the login page, click the 'Set custom logout URL' and enter "
+"a valid url in the text field that appears."
+msgstr ""
+
+#: include/users-page.php:486
+msgid ""
+"When banning a user I want to change all their posts to a different status "
+"(i.e. to hide all their published content)."
+msgstr ""
+
+#: include/users-page.php:487
+msgid ""
+"Often the reason for banning a user from your website is they've posted "
+"content that breaches the site's policy. The BAN User plugin allows you to "
+"change the user's posts to a different status (i.e. draft) when banning "
+"them. To enable this feature click the 'Change user's posts statuses when "
+"banning user (i.e. to hide posts from showing on blog)' checkbox on the "
+"options tab. A dropdown list will then appear allowing you to select the "
+"preferred status you wish to use. "
+msgstr ""
+
+#: include/users-page.php:488
+msgid "I only want to BAN a user for a week."
+msgstr ""
+
+#: include/users-page.php:489
+msgid ""
+"The BAN User plugin allows you to specify how long you want to BAN the user "
+"for. The date is set using a datepicker which is available on the users "
+"table and appears as a calendar icon when hovering over the username. To "
+"enable the datepicker you must first ensure the plugin's option 'Allow user "
+"to be unbanned automatically when a date is reached.' has been checked."
+msgstr ""
+
+#: include/users-page.php:490
+msgid "I want to BAN a user from logging on during certain hours of the day."
+msgstr ""
+
+#: include/users-page.php:491
+msgid ""
+"Unfortunately this feature isn't currently available, but in plan for a "
+"future release of the plugin."
+msgstr ""
+
+#: include/users-page.php:492
+msgid ""
+"I want the system to automatically reinstate users' login access when their "
+"banned period has expired."
+msgstr ""
+
+#: include/users-page.php:493
+msgid ""
+"Once a banned user's banned date has elapsed they will automatically be able "
+"to log back in to the system. No administrative action is required."
+msgstr ""
+
+#: include/users-page.php:494
+msgid "I want to customise the BANned and UnBANed email templates."
+msgstr ""
+
+#: include/users-page.php:495
+#, php-format
+msgid ""
+"From the plugin's option's page click on the 'Email Templates' tab. You "
+"should then see two sections for each corresponding email template. One for "
+"the 'BAN User email notification template' and another for the 'UnBAN User "
+"email notification template'. Within each section is the subject title and "
+"the message body. Important, please make sure you include the tag %%reason%% "
+"within the message body of the ban user template if you've enabled the "
+"option 'Require unique reason for ban'."
+msgstr ""
+
+#: include/users-page.php:496
+msgid "I want to ban a user how do I do this?"
+msgstr ""
+
+#: include/users-page.php:497
+msgid ""
+"There are two ways (and places!) in which you can ban a user (i.e. disable "
+"their account). Either by accessing the user's Profile page, or using the "
+"WordPress admin Users page. To BAN a user from their profile page, simply "
+"scroll to the bottom of their profile and tick the Ban User checkbox. To BAN "
+"a user from the Users page, navigate to the Users page and then find the "
+"corresponding user you wish to BAN. Once found hover your mouse over their "
+"username and some text links should appear below their username. To disable "
+"their account click the link 'Ban'. After a brief moment the link should "
+"change to 'Unban' and depending on the options you've set for the plugin the "
+"users row should go red and the BANned column should now display a red "
+"circle."
+msgstr ""
+
+#: include/users-page.php:498
+msgid "I want to unban a user how do I do this?"
+msgstr ""
+
+#: include/users-page.php:499
+msgid ""
+"There are two ways (and places!) in which you can unban a user (i.e. "
+"reinstate their account). Either by accessing the user's Profile page, or "
+"using the WordPress admin Users page. To UnBAN a user from their profile "
+"page, simply scroll of the bottom of their profile and untick the Ban User "
+"checkbox. To UnBAN a user from the Users page, navigate to the Users page "
+"and then find the corresponding user you wish to UnBAN. Once found hover "
+"your mouse over their username and some text links should appear below their "
+"username. To reinstate their account click the link 'Unban'. After a brief "
+"moment the link should change to 'Ban' and depending on the options you've "
+"set for the plugin the users row should return to white and the BANned "
+"column should now display a green circle."
+msgstr ""
+
+#: include/users-page.php:500
+msgid "I need further assistance, how can I request support?"
+msgstr ""
+
+#: include/users-page.php:501
+msgid ""
+"We're here to help you, so if you have any questions or comments please do "
+"get in touch using the contact form on our envato profile page:"
+msgstr ""
+
+#: include/users-page.php:502
+msgid "Can I request changes or enhancements to the plugin?"
+msgstr ""
+
+#: include/users-page.php:503
+msgid ""
+"We welcome any feedback and are always looking at new ways to enhance our "
+"plugins. To get in touch please contact us using our envato profile page:"
+msgstr ""
+
+#: include/users-page.php:517
+msgid "The Ultimate BAN Users WordPress Plugin"
+msgstr ""
+
+#: include/users-page.php:519
+msgid ""
+"The Ultimate BAN Users WordPress Plugin is the last plugin you’ll ever need "
+"for managing access to your WordPress site and removing users’ content. Ban "
+"existing users, deny registrations based on banned ips/emails. Catpure IP/"
+"Geodata and much, much more…"
+msgstr ""
+
+#: include/users-page.php:521
+msgid "Buy Premium Version"
+msgstr ""
+
+#: include/users-page.php:523
+msgid "Ultimate BAN Users Features:"
+msgstr ""
+
+#: include/users-page.php:525
+msgid ""
+"\n"
+"                    <li>\n"
+"                    <strong>Ban existing WordPress users</strong> from "
+"logging in</li>\n"
+"                    <li>Ban users indefinately or until a specified date</"
+"li>\n"
+"                    <li>\n"
+"                    <strong>Deny visitors from registering</strong> based on "
+"email and/or ip address</li>\n"
+"                    <li>Change the status of Ban users’ posts (i.e. to "
+"draft)</li>\n"
+"                    <li>Capture unqiue reason for banning users</li>\n"
+"                    <li>Send <strong>custom email notifications</strong>\n"
+"                    </li>\n"
+"                    <li>Force banned users to logout, or redirect them</li>\n"
+"                    <li>\n"
+"                    <strong>Capture IP/Geodata</strong> during logins</li>\n"
+"                    <li>Display IP/Geodata/banned details on users table</"
+"li>\n"
+"                    <li>Easily manage banned users/ips/emails</li>\n"
+"                    <li>Clearly <strong>highlight banned users</strong> in "
+"users table</li>\n"
+"                    <li>Send notifications when users’ publish first post</"
+"li>"
+msgstr ""
+
+#: include/users-page.php:570
+msgid "Ban this user"
+msgstr ""
+
+#: include/users-page.php:580
+msgid "Indefinent"
+msgstr ""
+
+#: include/view.php:44
+msgid "UnBan User"
+msgstr ""
+
+#: include/view.php:48
+msgid "Ban User"
+msgstr ""
+
+#: include/view.php:63
+msgid "Warn user"
+msgstr ""
+
+#: include/view.php:112
+msgid "BANned"
+msgstr ""
+
+#: include/view.php:146 include/view.php:151
+msgid "Banned:"
+msgstr ""
+
+#: include/view.php:163
+msgid "Reinstated:"
+msgstr ""
+
+#: w3dev-ban-users-class.php:30
+msgid "You have been banned from this part of the website"
+msgstr ""
+
+#: w3dev-ban-users-class.php:39
+msgid "This user account has been banned"
+msgstr ""
+
+#: w3dev-ban-users-class.php:40
+msgid "You have breached our site's terms of use."
+msgstr ""
+
+#: w3dev-ban-users-class.php:58
+#, php-format
+msgid ""
+"\n"
+"<p>Dear Member,<br />\n"
+" \n"
+"Your account has been suspended for the following reason. You will therefore "
+"be unable to login until your access has been reinstated.<br />\n"
+" \n"
+"%%reason%%<br />\n"
+"\n"
+"This ban will be lifted: %%unban_date%%<br />\n"
+" \n"
+"If you believe this message has been sent in error, or if you have any "
+"questions concerning this notification please email us at [enter your email "
+"here]<br />\n"
+"</p>\n"
+msgstr ""
+
+#: w3dev-ban-users-class.php:71
+msgid ""
+"\n"
+"<p>Dear Member,<br />\n"
+" \n"
+"We are pleased to inform you that your account has been reinstated. You are "
+"now able to login as normal.<br />\n"
+" \n"
+"If you have any questions concerning this notification please email us at "
+"[enter your email here]<br />\n"
+"</p>\n"
+msgstr ""
+
+#: w3dev-ban-users-class.php:80
+#, php-format
+msgid ""
+"\n"
+"<p>Dear Member,<br />\n"
+"\n"
+"Your user account is under investigation and at risk of being banned. Please "
+"review our comments below.<br />\n"
+"\n"
+"%%reason%%<br />\n"
+"\n"
+"If you believe this message has been sent in error, or if you have any "
+"questions concerning this notification please email us at [enter your email "
+"here]<br />\n"
+"</p>\n"
+msgstr ""
+
+#: w3dev-ban-users-class.php:93
+msgid "Your account has been suspended."
+msgstr ""
+
+#: w3dev-ban-users-class.php:95
+msgid "Your account has been reinstated."
+msgstr ""
+
+#: w3dev-ban-users-class.php:96
+msgid "Your account is at risk of being banned."
+msgstr ""
+
+#: w3dev-ban-users-class.php:99
+msgid "No date specified"
+msgstr ""
+
+#: w3dev-ban-users.php:59
+msgid "Settings"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "w3dev Ban Users"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+#. Author URI of the plugin/theme
+msgid "http://webxmedia.co.uk"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Ban a user from logging into their wordpress account."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "WEBxMedia LTD. (Matt Whiteman)"
+msgstr ""
