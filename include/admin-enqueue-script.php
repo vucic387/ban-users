@@ -8,14 +8,14 @@ function w3dev_ban_users_css() {
     $settings               = $w3dev_ban_user_class->get_options('settings');
     
     if (empty($settings['disable_autoload']['flatpickr'])) {
-        wp_register_style('w3dev-jquery-datepicker-css', "//cdnjs.cloudflare.com/ajax/libs/flatpickr/2.0.5/flatpickr.base16_flat.min.css", array(), W3DEV_BAN_USERS_VERSION_ID);
+        wp_register_style('w3dev-jquery-datepicker-css', "//cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.css", array(), W3DEV_BAN_USERS_VERSION_ID);
         wp_enqueue_style('w3dev-jquery-datepicker-css');
-        wp_register_style('w3dev-jquery-datepicker-red-css', "//cdnjs.cloudflare.com/ajax/libs/flatpickr/2.0.5/flatpickr.material_red.min.css", array(), W3DEV_BAN_USERS_VERSION_ID);
+        wp_register_style('w3dev-jquery-datepicker-red-css', "//cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/themes/material_red.min.css", array(), W3DEV_BAN_USERS_VERSION_ID);
         wp_enqueue_style('w3dev-jquery-datepicker-red-css');
     }
 
     if (empty($settings['disable_autoload']['fa'])) {
-        wp_register_style('w3dev-font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', array(), W3DEV_BAN_USERS_VERSION_ID);
+        wp_register_style('w3dev-font-awesome', '//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css', array(), W3DEV_BAN_USERS_VERSION_ID);
         wp_enqueue_style('w3dev-font-awesome');
     }
 
@@ -34,7 +34,7 @@ function w3dev_ban_users_css() {
     }
     
     if (empty($settings['disable_autoload']['datatables'])) {
-        wp_register_style('w3dev-dataTables-css', "//cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css", array(), W3DEV_BAN_USERS_VERSION_ID);
+        wp_register_style('w3dev-dataTables-css', "//cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css", array(), W3DEV_BAN_USERS_VERSION_ID);
         wp_enqueue_style('w3dev-dataTables-css');
     }
 
@@ -52,7 +52,7 @@ function w3dev_ban_users_css() {
 
     if (empty($settings['disable_autoload']['jq_confirm'])) {
 
-        wp_register_style('jquery-confirm-css', '//cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css', array(), W3DEV_BAN_USERS_VERSION_ID);
+        wp_register_style('jquery-confirm-css', '//cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.4/jquery-confirm.min.css', array(), W3DEV_BAN_USERS_VERSION_ID);
         wp_enqueue_style('jquery-confirm-css');
     }
 
@@ -62,7 +62,7 @@ function w3dev_ban_users_css() {
     }
 
     if (empty($settings['disable_autoload']['sumoselect'])) {
-        wp_register_style('jquery-sumoselect-css', '//cdnjs.cloudflare.com/ajax/libs/jquery.sumoselect/3.0.2/sumoselect.min.css', array(), W3DEV_BAN_USERS_VERSION_ID);
+        wp_register_style('jquery-sumoselect-css', '//cdnjs.cloudflare.com/ajax/libs/jquery.sumoselect/3.4.9/sumoselect.min.css', array(), W3DEV_BAN_USERS_VERSION_ID);
         wp_enqueue_style('jquery-sumoselect-css');
     }
 
@@ -90,14 +90,13 @@ function w3dev_ban_users_js($hook) {
 
     // only load on Plugin Settings Page
     // --
-    if ($hook == 'settings_page_ban_user_page') {
-
+    if (preg_match('/(toplevel|settings)_page_ban_user_page/i', $hook)) {
         wp_register_script('w3dev-ban-users-settings', plugins_url('../javascript/app-settings.js', __FILE__), array('jquery'), W3DEV_BAN_USERS_VERSION_ID, false);
         wp_enqueue_script('w3dev-ban-users-settings');
 
         if (empty($settings['disable_autoload']['datatables'])) {
 
-            wp_register_script('w3dev-datatables-js', '//cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js', array('jquery'), W3DEV_BAN_USERS_VERSION_ID, false);
+            wp_register_script('w3dev-datatables-js', '//cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js', array('jquery'), W3DEV_BAN_USERS_VERSION_ID, false);
             wp_enqueue_script('w3dev-datatables-js');
         }
     }
@@ -117,12 +116,12 @@ function w3dev_ban_users_js($hook) {
     wp_enqueue_script('w3dev-momentjs-js');
 
     if (empty($settings['disable_autoload']['flatpickr'])) {
-        wp_register_script('w3dev-jquery-datepicker-js', '//cdnjs.cloudflare.com/ajax/libs/flatpickr/2.0.5/flatpickr.js', array('jquery'), W3DEV_BAN_USERS_VERSION_ID, false);
+        wp_register_script('w3dev-jquery-datepicker-js', '//cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.js', array('jquery'), W3DEV_BAN_USERS_VERSION_ID, false);
         wp_enqueue_script('w3dev-jquery-datepicker-js');
     }
 
     if (empty($settings['disable_autoload']['jq_confirm'])) {
-        wp_register_script('w3dev-jquery-confirm-js', '//cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js', array('jquery'), W3DEV_BAN_USERS_VERSION_ID, false);
+        wp_register_script('w3dev-jquery-confirm-js', '//cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.4/jquery-confirm.min.js', array('jquery'), W3DEV_BAN_USERS_VERSION_ID, false);
         wp_enqueue_script('w3dev-jquery-confirm-js');
     }
 
@@ -132,7 +131,7 @@ function w3dev_ban_users_js($hook) {
     }
 
     if (empty($settings['disable_autoload']['sumoselect'])) {
-        wp_register_script('w3dev-jquery-sumoselect-js', '//cdnjs.cloudflare.com/ajax/libs/jquery.sumoselect/3.0.2/jquery.sumoselect.min.js', array('jquery'), W3DEV_BAN_USERS_VERSION_ID, false);
+        wp_register_script('w3dev-jquery-sumoselect-js', '//cdnjs.cloudflare.com/ajax/libs/jquery.sumoselect/3.4.9/jquery.sumoselect.min.js', array('jquery'), W3DEV_BAN_USERS_VERSION_ID, false);
         wp_enqueue_script('w3dev-jquery-sumoselect-js');
     }
 
@@ -143,7 +142,7 @@ function w3dev_ban_users_js($hook) {
 
         // only load on Plugin Settings Page
         // --
-        if ($hook == 'settings_page_ban_user_page') {
+        if (preg_match('/(toplevel|settings)_page_ban_user_page/i', $hook)) {
             wp_register_script('w3dev-ultimate-ban-users-settings-js', plugins_url('../javascript/plugin-settings.js', __FILE__), array('jquery'), W3DEV_BAN_USERS_VERSION_ID, false);
             wp_enqueue_script('w3dev-ultimate-ban-users-settings-js');
         }

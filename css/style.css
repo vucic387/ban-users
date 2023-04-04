@@ -48,7 +48,7 @@ span.w3dev-banned-user-icon {
     background-position:0 center;
 }
 
-tr.w3dev-banned-user-row {
+.w3dev-banned-user-row {
     background-color: #f2dede!important;
 }
 
@@ -311,3 +311,11 @@ a.cgc_ub_edit_badges:focus {
 li.go-pro span { color:red; font-weight:600; }
 li.go-pro a.active { background-color: red!important; border-color: red!important; }
 li.go-pro a.active span { color: #fff!important; }
+
+/* Added v1.5.4
+ */
+ #geodata {width: 150px !important;}
+ #modified {width: 150px !important;}
+ #mydate {width: 150px !important;}
+ #karma {width: 150px !important;}
+ #registration_date {width: 150px !important;}

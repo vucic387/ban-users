@@ -85,7 +85,7 @@ function w3dev_banned_history_callback() {
 
     <?php
 
-    echo $html;
+    // echo $html;
     wp_die();
 
 }
@@ -159,7 +159,7 @@ function w3dev_toggle_warn_user_callback() {
             // Determine if the message sent as a parameter is empty
             // Replaces the empty message with a generic one
             // --
-            if ( empty($message) ) { $message = $settings['ban_email_default_message']; }
+            if ( empty($reason) ) { $reason = $settings['ban_email_default_message']; }
             if ( $find_reason_tag !== false ) { 
                 $reason = empty($reason) ? null : $reason;
                 $body = str_replace('%%reason%%', $reason, $body);
@@ -189,6 +189,9 @@ function w3dev_toggle_warn_user_callback() {
 
         
         echo '<span style="color:#a00">Warn</span>';
+
+        BANNED_HISTORY::add_comment($user_id, $reason, BANNED_HISTORY::w3dev_user_warn, $settings['date_format'], '');
+
     }
     
     wp_die();
@@ -270,6 +273,7 @@ function w3dev_save_ban_user_settings_callback() {
 
     $extentions = array();
     $extensions['ultimate_member']      = !empty( $_POST['ext_ultimate_member'] ) ? 1 : 0;
+    $extensions['woocommerce']      = !empty( $_POST['ext_woocommerce'] ) ? 1 : 0; // v1.5.4
 
     $security = array();
     $security['enable_admin_override']  = !empty( $_POST['security_enable_admin_override'] ) ? $_POST['security_enable_admin_override'] : 0;

@@ -384,28 +384,28 @@ msgstr ""
 "unchecked unless you know what you are doing."
 
 #: include/users-page.php:318
-msgid "Disable js/css autoload Font Awesome (ver 4.7.0)"
-msgstr "Disable js/css autoload Font Awesome (ver 4.7.0)"
+msgid "Disable js/css autoload Font Awesome (ver 6.4.0)"
+msgstr "Disable js/css autoload Font Awesome (ver 6.4.0)"
 
 #: include/users-page.php:321
-msgid "Disable js/css autoload jQuery Confirm (ver 3.2.1)"
-msgstr "Disable js/css autoload jQuery Confirm (ver 3.2.1)"
+msgid "Disable js/css autoload jQuery Confirm (ver 3.3.4)"
+msgstr "Disable js/css autoload jQuery Confirm (ver 3.3.4)"
 
 #: include/users-page.php:324
-msgid "Disable js/css autoload DataTables (ver 1.10.12)"
-msgstr "Disable js/css autoload DataTables (ver 1.10.12)"
+msgid "Disable js/css autoload DataTables (ver 1.13.4)"
+msgstr "Disable js/css autoload DataTables (ver 1.13.4)"
 
 #: include/users-page.php:327
-msgid "Disable js/css autoload Notify (ver 0.4.1)"
-msgstr "Disable js/css autoload Notify (ver 0.4.1)"
+msgid "Disable js/css autoload Notify (ver 0.4.2)"
+msgstr "Disable js/css autoload Notify (ver 0.4.2)"
 
 #: include/users-page.php:330
 msgid "Disable js/css autoload Selectric (ver 1.11.1)"
 msgstr "Disable js/css autoload Selectric (ver 1.11.1)"
 
 #: include/users-page.php:333
-msgid "Disable js/css autoload Flatpickr (ver 2.0.5)"
-msgstr "Disable js/css autoload Flatpickr (ver 2.0.5)"
+msgid "Disable js/css autoload Flatpickr (ver 4.6.13)"
+msgstr "Disable js/css autoload Flatpickr (ver 4.6.13)"
 
 #: include/users-page.php:345
 msgid "Save Options"

@@ -4,7 +4,7 @@ if ( ! defined('ABSPATH' ) ) exit;
 class W3DEV_BAN_USER_CLASS {
 
     protected static $instance = NULL;
-
+    private $is_admin;
     public static function get_instance() {
 
         // create an object
@@ -44,7 +44,9 @@ class W3DEV_BAN_USER_CLASS {
             'frontend_notification_hide'            => 0,
             'warn_user'                             => 1,
             'warn_user_reason'                      => 1,
-            'accessibility'                         => 0
+            'accessibility'                         => 0,
+            'disable_autoload'                      => array('faanimation' => 1, 'sumoselect' => 1), // added to v1.5.4, fa-animation is allready in fa, sumoselect not implemented
+            'extensions'                            => array('woocommerce' => 1)
         );
 
         if ( W3DEV_BAN_USERS_PREMIUM_VERSION ) {
@@ -242,7 +244,7 @@ If you believe this message has been sent in error, or if you have any questions
         // --
         wp_unschedule_event(  wp_next_scheduled('w3dev_unban_user', array( intval($user_id) )), 'w3dev_unban_user', array( intval($user_id) ));
         if ($date != null) {
-            if ( $settings[date_format] == "m-d-Y") $date = str_replace('-', '/', $date); // Converts to be assumed as American.
+            if ( $settings['date_format'] == "m-d-Y") $date = str_replace('-', '/', $date); // Converts to be assumed as American.
             wp_schedule_single_event( strtotime($date), 'w3dev_unban_user', array( intval($user_id)) );
         }
 
@@ -252,7 +254,7 @@ If you believe this message has been sent in error, or if you have any questions
         if ( ! $this->is_user_banned( $user_id ) ) {
 
             global $wpdb;
-
+            $ban_user_email_notification=[];
             // set the user to banned
             // --
             update_user_option( $user_id, 'w3dev_user_banned', TRUE, FALSE );
@@ -283,6 +285,8 @@ If you believe this message has been sent in error, or if you have any questions
 
                 update_user_option( $user_id, 'w3dev_user_banned_reason', $body, FALSE );
             }
+
+            BANNED_HISTORY::add_comment($user_id, $message, BANNED_HISTORY::w3dev_user_banned, $settings['date_format'], $date);
 
             // email should be sent
             // -- 
@@ -380,6 +384,8 @@ If you believe this message has been sent in error, or if you have any questions
                 }
                 w3dev_unset_spammer_option( $user_id, 'user_status', 0 );
             }
+
+            BANNED_HISTORY::add_comment($user_id, '', BANNED_HISTORY::w3dev_user_unbanned, $settings['date_format'], '');
 
             global $wpdb;
 
@@ -491,7 +497,7 @@ If you believe this message has been sent in error, or if you have any questions
 
         if (!empty($scanned_directory)) {
             foreach ($scanned_directory as $file) {
-                include_once($directory.'/'.file);
+                include_once($directory.'/'.$file);
             }
         }
 
@@ -587,5 +593,3 @@ If you believe this message has been sent in error, or if you have any questions
 
 
 }
-
-?>

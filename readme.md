@@ -3,8 +3,8 @@ Contributors: webxmedia
 Donate link: http://webxmedia.co.uk
 Tags: users, ban, lock account, block account, deny access, security, account, disable, login, logon, suspend, temporary, user, disable user, wp-admin disable, wp-login disable
 Requires at least: 4.2
-Tested up to: 4.9.4
-Stable tag: 1.5.3
+Tested up to: 6.2.0
+Stable tag: 1.5.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -55,7 +55,7 @@ Ban a user from logging into their wordpress account, suspend posts and send not
 </ul>
 
 <h4>Premium Plugin Features:</h4>
-<p><a href="https://codecanyon.net/item/wp-ultimate-ban-users/17508338">Buy Premium Version</a></p>
+<p><a style="pointer-events: none; text-decoration: line-through;" href="https://codecanyon.net/item/wp-ultimate-ban-users/17508338">Buy Premium Version</a></p>
 <ul>
 <li>Capture users' IP/Geodata during login</li>
 <li>Display IP/Geodata in users table</li>
@@ -159,6 +159,19 @@ You will need to contact a website administrator and asked to be unbanned. Each 
 </p>
 
 == Changelog ==
+
+= 1.5.4 =
+* [Added] Karma column to the CPT Banned History is equal to the total banned days per user, higher karma means a greater spammer
+* [Added] Registration date column to the all users table
+* [Added] Authors dropdown to the edit comments for filtering comments
+* [Added] Banned-history comment type to the edit comments dropdown for filtering comments
+* [Added] CPT Banned History for the Ban Users logs. Logging activities as comments on the CPT
+* [Added] Row actions to the comment rows in the activity dashboard widget
+* [Added] Row actions to the woocommerce product reviews table
+* [Added] Row actions to the edit comments table
+* [Added] Show comments by user row action
+* [Fixed] Dependency updates
+* [Fixed] Minor PHP code refactoring
 
 = 1.5.3 =
 * Thanks to @davsev for suggesting this feature

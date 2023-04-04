@@ -91,7 +91,7 @@ function w3dev_ban_user_options_partial()
                     <a href="#w3dev-warn-options-section" class="faa-parent animated-hover"><i class="fa fa-4x fa-exclamation-triangle faa-pulse" aria-hidden="true"></i><span><?php _e('Warn', 'ban-users'); ?></span></a>
                     <a href="#w3dev-security-section" class="faa-parent animated-hover"><i class="fa fa-4x fa-shield faa-pulse" aria-hidden="true"></i><span><?php _e('Security', 'ban-users'); ?></span></a>
                     <a href="#w3dev-3rdparty-section" class="faa-parent animated-hover"><i class="fa fa-4x fa-plug faa-pulse" aria-hidden="true"></i><span><?php _e('3rd Party', 'ban-users'); ?></span></a>
-                    <a href="#w3dev-shortcodes-section" class="faa-parent animated-hover"><i class="fa fa-4x fa-wordpress faa-pulse" aria-hidden="true"></i><span><?php _e('Shortcodes', 'ban-users'); ?></span></a>
+                    <a href="#w3dev-shortcodes-section" class="faa-parent animated-hover"><i class="fab fa-4x fa-wordpress faa-pulse" aria-hidden="true"></i><span><?php _e('Shortcodes', 'ban-users'); ?></span></a>
                     <a href="#w3dev-conflict-section" class="faa-parent animated-hover"><i class="fa fa-4x fa-bug faa-pulse" aria-hidden="true"></i><span><?php _e('Conflict', 'ban-users'); ?></span></a>
                 </div>
 
@@ -422,10 +422,13 @@ function w3dev_ban_user_options_partial()
                         <input type="checkbox" name="input-ext-ultimate-member" id="input-ext-ultimate-member" value="1" <?php echo (!empty($settings['extensions']['ultimate_member'])) ? 'checked' : null; ?> /><?php _e('Ultimate Member Plugin', 'ban-users'); ?>
                     </div>
                     <div class="mb-10">
-                        <input disabled type="checkbox" name="input-ext-ultimate-member" id="input-ext-buddypress" value="1" checked="checked" /><?php _e('BuddyPress Plugin (by default)', 'ban-users'); ?>
+                        <input disabled type="checkbox" name="input-ext-buddypress" id="input-ext-buddypress" value="1" checked="checked" /><?php _e('BuddyPress Plugin (by default)', 'ban-users'); ?>
                     </div> 
                     <div class="mb-10">
                         <input disabled type="checkbox" name="input-ext-s2member" id="input-ext-s2member" value="1" /><?php _e('s2member Plugin (Coming Soon)', 'ban-users'); ?>
+                    </div>
+                    <div class="mb-10">
+                        <input type="checkbox" name="input-ext-woocommerce" id="input-ext-woocommerce" value="1" <?php echo (!empty($settings['extensions']['woocommerce'])) ? 'checked' : null; ?> /><?php _e('WooCommerce Plugin Product Reviews', 'ban-users'); ?>
                     </div>
                     </div>
                     <a class="w3dev-back-to-top" href="body"><?php _e('Back to Top', 'ban-users'); ?></a>
@@ -433,7 +436,7 @@ function w3dev_ban_user_options_partial()
                 </div>
 
                <div id="w3dev-shortcodes-section" class="w3dev-settings-section <?php echo (!empty($settings['close_panels'])) ? 'closed' : null; ?>">
-                    <h3><i class="w3dev-icon fa fa-2x fa-wordpress" aria-hidden="true"></i><?php _e('Plugin Shortcodes', 'ban-users'); ?><a class="w3dev-toggle-content" style="float:right"><i class="fa fa-caret-<?php echo (!empty($settings['close_panels'])) ? 'up' : 'down'; ?>"" aria-hidden="true"></i></a></h3>
+                    <h3><i class="w3dev-icon fab fa-2x fa-wordpress" aria-hidden="true"></i><?php _e('Plugin Shortcodes', 'ban-users'); ?><a class="w3dev-toggle-content" style="float:right"><i class="fa fa-caret-<?php echo (!empty($settings['close_panels'])) ? 'up' : 'down'; ?>"" aria-hidden="true"></i></a></h3>
 
                     <div class="w3dev-content" <?php echo (!empty($settings['close_panels'])) ? 'style="display:none;"' : null; ?>>
 
@@ -463,22 +466,22 @@ function w3dev_ban_user_options_partial()
                     <p class="mb-20"><?php _e("If you want to manually load any of the libraries required by this plugin then simply check the correspnding tick box(es) below to disable them from autoloading. But remember, the plugin won't function correctly if these libraries aren't all available. So I recommend you keep all tick boxes below unchecked unless you know what you are doing.", 'ban-users'); ?></p>
 
                     <div class="mb-10">
-                        <input type="checkbox" name="input-autoload-fa" id="input-autoload-fa" value="1" <?php echo (!empty($settings['disable_autoload']['fa'])) ? 'checked' : null; ?> /><?php _e('Disable js/css autoload Font Awesome (ver 4.7.0)', 'ban-users'); ?>
+                        <input type="checkbox" name="input-autoload-fa" id="input-autoload-fa" value="1" <?php echo (!empty($settings['disable_autoload']['fa'])) ? 'checked' : null; ?> /><?php _e('Disable js/css autoload Font Awesome (ver 6.4.0)', 'ban-users'); ?>
                     </div>
                     <div class="mb-10">
-                        <input type="checkbox" name="input-autoload-jq-confirm" id="input-autoload-jq-confirm" value="1" <?php echo (!empty($settings['disable_autoload']['jq_confirm'])) ? 'checked' : null;  echo '/>'; _e('Disable js/css autoload jQuery Confirm (ver 3.3.2)', 'ban-users'); echo ' <span style="position: relative;top:-1px;" class="bs-label label-warning">'; _e('UPDATED', 'ban-users'); ?></span>
+                        <input type="checkbox" name="input-autoload-jq-confirm" id="input-autoload-jq-confirm" value="1" <?php echo (!empty($settings['disable_autoload']['jq_confirm'])) ? 'checked' : null;  echo '/>'; _e('Disable js/css autoload jQuery Confirm (ver 3.3.4)', 'ban-users'); echo ' <span style="position: relative;top:-1px;" class="bs-label label-warning">'; _e('UPDATED', 'ban-users'); ?></span>
                     </div>
                     <div class="mb-10">
-                        <input type="checkbox" name="input-autoload-datatables" id="input-autoload-datatables" value="1" <?php echo (!empty($settings['disable_autoload']['datatables'])) ? 'checked' : null; ?> /><?php _e('Disable js/css autoload DataTables (ver 1.10.16)', 'ban-users'); ?>
+                        <input type="checkbox" name="input-autoload-datatables" id="input-autoload-datatables" value="1" <?php echo (!empty($settings['disable_autoload']['datatables'])) ? 'checked' : null; ?> /><?php _e('Disable js/css autoload DataTables (ver 1.13.4)', 'ban-users'); ?>
                     </div> 
                     <div class="mb-10">
-                        <input type="checkbox" name="input-autoload-notify" id="input-autoload-notify" value="1" <?php echo (!empty($settings['disable_autoload']['notify'])) ? 'checked' : null; ?> /><?php _e('Disable js/css autoload Notify (ver 0.4.1)', 'ban-users'); ?>
+                        <input type="checkbox" name="input-autoload-notify" id="input-autoload-notify" value="1" <?php echo (!empty($settings['disable_autoload']['notify'])) ? 'checked' : null; ?> /><?php _e('Disable js/css autoload Notify (ver 0.4.2)', 'ban-users'); ?>
                     </div> 
                     <div class="mb-10">
                         <input type="checkbox" name="input-autoload-selectric" id="input-autoload-selectric" value="1" <?php echo (!empty($settings['disable_autoload']['selectric'])) ? 'checked' : null; ?> /><?php _e('Disable js/css autoload Selectric (ver 1.13.0)', 'ban-users'); ?>
                     </div>
                     <div class="mb-10">
-                        <input type="checkbox" name="input-autoload-flatpickr" id="input-autoload-flatpickr" value="1" <?php echo (!empty($settings['disable_autoload']['flatpickr'])) ? 'checked' : null; ?> /><?php _e('Disable js/css autoload Flatpickr (ver 2.0.5)', 'ban-users'); ?>
+                        <input type="checkbox" name="input-autoload-flatpickr" id="input-autoload-flatpickr" value="1" <?php echo (!empty($settings['disable_autoload']['flatpickr'])) ? 'checked' : null; ?> /><?php _e('Disable js/css autoload Flatpickr (ver 4.6.13)', 'ban-users'); ?>
                     </div>
                     <div class="mb-10">
                         <input type="checkbox" name="input-autoload-faanimation" id="input-autoload-faanimation" value="1" <?php echo (!empty($settings['disable_autoload']['faanimation'])) ? 'checked' : null; ?>><?php _e('Disable js/css autoload Font Awesome Animation (ver 0.0.10)', 'ban-users'); ?>
@@ -801,9 +804,9 @@ function w3dev_ban_user_options_partial()
                 <li class="question"><span>Q.</span> <?php _e("I want to unban a user how do I do this?", 'ban-users'); ?></li>
                 <li class="answer"><span>A.</span> <?php _e("There are two ways (and places!) in which you can unban a user (i.e. reinstate their account). Either by accessing the user's Profile page, or using the WordPress admin Users page. To UnBAN a user from their profile page, simply scroll of the bottom of their profile and untick the Ban User checkbox. To UnBAN a user from the Users page, navigate to the Users page and then find the corresponding user you wish to UnBAN. Once found hover your mouse over their username and some text links should appear below their username. To reinstate their account click the link 'Unban'. After a brief moment the link should change to 'Ban' and depending on the options you've set for the plugin the users row should return to white and the BANned column should now display a green circle.", 'ban-users'); ?></li>
                 <li class="question"><span>Q.</span> <?php _e("I need further assistance, how can I request support?", 'ban-users'); ?></li>
-                <li class="answer"><span>A.</span> <?php _e("We're here to help you, so if you have any questions or comments please do get in touch using the contact form on our envato profile page:", 'ban-users'); ?> <a href="https://codecanyon.net/user/webxmedia">https://codecanyon.net/user/webxmedia</a></li>
+                <li class="answer"><span>A.</span> <?php _e("We're here to help you, so if you have any questions or comments please do get in touch using the contact form on our envato profile page:", 'ban-users'); ?> <a style="pointer-events: none; text-decoration: line-through;" href="https://codecanyon.net/user/webxmedia">https://codecanyon.net/user/webxmedia</a></li>
                 <li class="question"><span>Q.</span> <?php _e("Can I request changes or enhancements to the plugin?", 'ban-users'); ?></li>
-                <li class="answer"><span>A.</span> <?php _e("We welcome any feedback and are always looking at new ways to enhance our plugins. To get in touch please contact us using our envato profile page:", 'ban-users'); ?> <a href="https://codecanyon.net/user/webxmedia">https://codecanyon.net/user/webxmedia</a></li>
+                <li class="answer"><span>A.</span> <?php _e("We welcome any feedback and are always looking at new ways to enhance our plugins. To get in touch please contact us using our envato profile page:", 'ban-users'); ?> <a style="pointer-events: none; text-decoration: line-through;" href="https://codecanyon.net/user/webxmedia">https://codecanyon.net/user/webxmedia</a></li>
             </ul>
 <!--
             <style>
@@ -821,7 +824,7 @@ function w3dev_ban_user_options_partial()
 
                 <p><strong><?php _e("The Ultimate BAN Users WordPress Plugin is the last plugin you’ll ever need for managing access to your WordPress site and removing users’ content. Ban existing users, deny registrations based on banned ips/emails. Catpure IP/Geodata and much, much more…", 'ban-users');?></strong>.</p>
 
-                <p><a href="https://codecanyon.net/item/wp-ultimate-ban-users/17508338" target='_blank' rel="nofollow"><?php _e('Buy Premium Version', 'ban_uer'); ?></a></p>
+                <p><a style="pointer-events: none; text-decoration: line-through;" href="https://codecanyon.net/item/wp-ultimate-ban-users/17508338" target='_blank' rel="nofollow"><?php _e('Buy Premium Version', 'ban_uer'); ?></a></p>
 
                 <p><span style="font-size:1.2em;font-weight:bold;text-decoration:underline"><?php _e('Ultimate BAN Users Features:', 'ban-users'); ?></span></p>
                 <ul> </ul>

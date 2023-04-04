@@ -3,7 +3,7 @@ jQuery(document).ready(function($) {
     $('.data-table').DataTable();
 
     $('#w3dev-table-banned-users').on('click', '.js-unban-user', function(e) {
-
+    
     	var _this = $(this);
     	_this.addClass('success');
     	var _user_id   = _this.data('user-id');
