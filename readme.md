@@ -1,12 +1,12 @@
-=== BAN Users ===
-Contributors: webxmedia
-Donate link: http://webxmedia.co.uk
-Tags: users, ban, lock account, block account, deny access, security, account, disable, login, logon, suspend, temporary, user, disable user, wp-admin disable, wp-login disable
-Requires at least: 4.2
-Tested up to: 6.2.0
-Stable tag: 1.5.4
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+=== BAN Users ===<br>
+Contributors: webxmedia<br>
+Donate link: http://webxmedia.co.uk<br>
+Tags: users, ban, lock account, block account, deny access, security, account, disable, login, logon, suspend, temporary, user, disable user, wp-admin disable, wp-login disable<br>
+Requires at least: 4.2<br>
+Tested up to: 6.2.0<br>
+Stable tag: 1.5.5<br>
+License: GPLv2 or later<br>
+License URI: http://www.gnu.org/licenses/gpl-2.0.html<br>
 
 Ban a user from logging into their wordpress account, suspend posts and send notifications. The perfect solution for managing users and blocking unwanted registrations. 
 
@@ -55,7 +55,7 @@ Ban a user from logging into their wordpress account, suspend posts and send not
 </ul>
 
 <h4>Premium Plugin Features:</h4>
-<p><a style="pointer-events: none; text-decoration: line-through;" href="https://codecanyon.net/item/wp-ultimate-ban-users/17508338">Buy Premium Version</a></p>
+<p> https://codecanyon.net/item/wp-ultimate-ban-users</p>
 <ul>
 <li>Capture users' IP/Geodata during login</li>
 <li>Display IP/Geodata in users table</li>
@@ -159,6 +159,9 @@ You will need to contact a website administrator and asked to be unbanned. Each 
 </p>
 
 == Changelog ==
+
+= 1.5.5 =
+* [Fixed] Removed "Add new CPT Banned History" for every user on the plugin activation. It was a really bad idea. Adding CPT only on banning a user
 
 = 1.5.4 =
 * [Added] Karma column to the CPT Banned History is equal to the total banned days per user, higher karma means a greater spammer

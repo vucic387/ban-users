@@ -84,19 +84,5 @@ add_filter( "plugin_action_links_$plugin", 'w3dev_plugin_add_settings_link' );
 
 include_once('banned-history-class.php');
 
-function w3dev_ban_users_activate() {
-
-    global $wpdb;
-	
-    // select all users without cpt banned-history (user.meta_key='_banned_history_id')
-	$users = $wpdb->get_results( "SELECT u.ID FROM {$wpdb->users} AS u LEFT JOIN {$wpdb->usermeta} AS m ON u.ID = m.user_id AND m.meta_key = '_banned_history_id' WHERE m.meta_value IS NULL" );
-    // loop trough each user
-    foreach ($users as $user) {
-        // cpt banned-history add
-        BANNED_HISTORY::profile_update($user->ID);
-    }
-};
-register_activation_hook( __FILE__, 'w3dev_ban_users_activate' );
-
 
 ?>

@@ -125,6 +125,7 @@ class BANNED_HISTORY
     return $url;
   }
   static function add_comment(int $user_ID, string $message, string $type, string $date_format = '', $date_to = ''){
+    self::profile_update($user_ID);
     $date = date("Y-m-d H:i:s");
     $comment_karma = 0;
     if (!empty($date_to)) {
