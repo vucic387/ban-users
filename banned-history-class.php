@@ -87,7 +87,7 @@ class BANNED_HISTORY
       return;
     }
     $user_id = self::get_user_id($post_id);
-    error_log('USERID: ' . $user_id . ', POSTID: ' . $post_id);
+    // error_log('USERID: ' . $user_id . ', POSTID: ' . $post_id);
     // Delete user and post meta, relationship between user and cpt banned-history
     delete_user_meta($user_id, '_banned_history_id');
     delete_post_meta($post_id, '_user_id');
