@@ -118,19 +118,45 @@ You will need to contact a website administrator and asked to be unbanned. Each 
 
 == Screenshots ==
 
-1. ![alt screenshot-1] (https://ps.w.org/ban-users/assets/screenshot-1.jpg)
-2. ![alt screenshot-2] (https://ps.w.org/ban-users/assets/screenshot-2.jpg)
-3. ![alt screenshot-3] (https://ps.w.org/ban-users/assets/screenshot-3.jpg)
-4. ![alt screenshot-4] (https://ps.w.org/ban-users/assets/screenshot-4.jpg)
-5. ![alt screenshot-5] (https://ps.w.org/ban-users/assets/screenshot-5.jpg)
-6. ![alt screenshot-6] (https://ps.w.org/ban-users/assets/screenshot-6.jpg)
-7. ![alt screenshot-7] (https://ps.w.org/ban-users/assets/screenshot-7.jpg)
-8. ![alt screenshot-8] (https://ps.w.org/ban-users/assets/screenshot-8.jpg)
-9. ![alt screenshot-9] (https://ps.w.org/ban-users/assets/screenshot-9.jpg)
-10. ![alt screenshot-10] (https://ps.w.org/ban-users/assets/screenshot-10.jpg)
-11. ![alt screenshot-11] (https://ps.w.org/ban-users/assets/screenshot-11.jpg)
-12. ![alt screenshot-12] (https://ps.w.org/ban-users/assets/screenshot-12.jpg)
-13. ![alt screenshot-13] (https://ps.w.org/ban-users/assets/screenshot-13.jpg)
+<p align="center">
+1. <img alt="screenshot-1" title="screenshot-1" src="assets/screenshot-1.jpg"/>
+</p>
+<p align="center">
+2. <img alt="screenshot-2" title="screenshot-2" src="assets/screenshot-2.jpg"/>
+</p>
+<p align="center">
+3. <img alt="screenshot-3" title="screenshot-3" src="assets/screenshot-3.png"/>
+</p>
+<p align="center">
+4. <img alt="screenshot-4" title="screenshot-4" src="assets/screenshot-4.png"/>
+</p>
+<p align="center">
+5. <img alt="screenshot-5" title="screenshot-5" src="assets/screenshot-5.png"/>
+</p>
+<p align="center">
+6. <img alt="screenshot-6" title="screenshot-6" src="assets/screenshot-6.png"/>
+</p>
+<p align="center">
+7. <img alt="screenshot-7" title="screenshot-7" src="assets/screenshot-7.png"/>
+</p>
+<p align="center">
+8. <img alt="screenshot-8" title="screenshot-8" src="assets/screenshot-8.png"/>
+</p>
+<p align="center">
+9. <img alt="screenshot-9" title="screenshot-9" src="assets/screenshot-9.png"/>
+</p>
+<p align="center">
+10. <img alt="screenshot-10" title="screenshot-10" src="assets/screenshot-10.png"/>
+</p>
+<p align="center">
+11. <img alt="screenshot-11" title="screenshot-11" src="assets/screenshot-11.png"/>
+</p>
+<p align="center">
+12. <img alt="screenshot-12" title="screenshot-12" src="assets/screenshot-12.png"/>
+</p>
+<p align="center">
+13. <img alt="screenshot-13" title="screenshot-13" src="assets/screenshot-13.png"/>
+</p>
 
 == Changelog ==
 
